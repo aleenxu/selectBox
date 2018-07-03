@@ -1,0 +1,68 @@
+body{
+    background: #333;
+}
+/* 背景色 */
+.bg-blue{
+    background:rgb(6,89,155);
+}
+/* 透明层 */
+.opacity-div{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:.6;
+    z-index: -1;
+    text-indent: -9999em;
+}
+.select-box{
+    min-width:60px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;   
+    margin:0 5px;
+    color:#fff; 
+    font-size:12px;   
+}
+.select-box em{
+    padding:2px 25px 2px 10px;
+    display: block;
+    font-style: normal;
+    border:1px solid #066fa8;
+    cursor: pointer;
+}
+.select-box em b{
+    font-weight: lighter;
+}
+.select-box i::before{
+    position: absolute;
+    right:8px;
+    top:8px;
+    font-size: 10px;
+}
+.select-box .transform::before{
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    top:6px;
+}
+.select-box dl{
+    position: absolute;
+    left:0;
+    right:-10px;
+    top:14px;
+    width:100%;
+    background:#066fa8;
+    text-indent:10px;
+    display:none;
+}
+.select-box dl dt{
+    display: block;
+    padding:3px;
+    line-height:20px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+.select-box dl dt:hover{
+    background:#4f9adf;
+}
